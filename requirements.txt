@@ -1,0 +1,4 @@
+pandas==1.3.5
+rasa==2.8.25
+rasa-sdk==2.8.4
+rasa-x==1.0.1
