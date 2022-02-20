@@ -32,6 +32,7 @@ stories:
 - story: greet and food_finder_form
   steps:
   - intent: greet
+  - action: utter_greet
   - action: food_finder_form
   - action: action_show_foods
 
