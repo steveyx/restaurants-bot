@@ -90,3 +90,134 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: inform_place
+  examples: |
+    - at [Ang Mo Kio](place)
+    - at [Raffles Place](place)
+    - at [Bishan](place)
+    - at [Buona Vista](place)
+    - at [Commonwealth](place)
+    - [Ang Mo Kio](place)
+    - [Changi](place)
+    - at [Woodlands](place)
+    - at [Choa Chu Kang](place)
+    - [Bugis](place)
+    - [Kallang](place)
+    - at [geylang](place)
+    - at [Holland Village](place)
+    - [Fort Canning](place)
+    - [Tampines](place)
+    - [Ang Mo Kio](place)
+    - [Stevens](place)
+    - [Clarke Quay](place)
+    - [Chinatown](place)
+    - at [little india](place)
+    - [Sengkang](place)
+    - [Kovan](place)
+    - [Promenade](place)
+    - [HarbourFront](place)
+    - [Clarke Quay](place)
+    - [MacPherson](place)
+    - [Beauty World](place)
+    - [Rochor](place)
+    - [Telok Ayer](place)
+    - [Sembawang](place)
+    - [Khatib](place)
+    - [Stevens](place)
+    - at [Yio Chu Kang](place)
+    - [Braddell](place)
+    - [Orchard](place)
+    - [Novena](place)
+    - [Newton](place)
+    - [Somerset](place)
+    - [Sembawang](place)
+    - [Dhoby Ghaut](place)
+    - [City Hall](place)
+    - [Yio Chu Kang](place)
+    - at [Braddell](place)
+    - at [Orchard](place)
+    - at [Novena](place)
+    - at [Newton](place)
+    - at [Somerset](place)
+    - at [Sembawang](place)
+    - at [Dhoby Ghaut](place)
+    - at [City Hall](place)
+    - at [Clementi](place)
+
+
+- intent: inform_food_category
+  examples: |
+    - [Italian](food_category) food
+    - [Thai](food_category) food
+    - [Chinese](food_category) food
+    - [Korean](food_category)
+    - [Vietnamese](food_category) food
+    - [Japanese](food_category) food
+    - [Mediterranean](food_category) food
+    - [Indian](food_category) food
+    - [European](food_category) food
+    - [Taiwanese](food_category)
+    - [Indonesian](food_category) food
+    - [Spanish](food_category) food
+    - [Middle Eastern](food_category)
+    - [Malay](food_category)
+    - [Roti Prata](food_category) food
+    - [Chinese](food_category)
+    - [Cafe](food_category)
+    - [Cantonese](food_category)
+    - [Seafood](food_category)
+    - [Nasi Lemak](food_category)
+    - [Zichar](food_category) food
+    - [Hawker](food_category) food
+    - [Seafood](food_category) food
+    - [Yong Tau Foo](food_category)
+    - [Buffet](food_category)
+    - [Dim Sum](food_category)
+    - [Steamboat](food_category)
+    - [Western](food_category) food
+    - [Sichuan](food_category) food
+    - [French](food_category) food
+    - [Vegetarian](food_category)
+    - [Korean](food_category) food
+    - [International](food_category)
+    - [Porridge](food_category)
+    - [Curry Rice](food_category)
+    - [Nasi Padang](food_category)
+    - [Satay](food_category)
+    - [Confectionary](food_category)
+
+- intent: find_foods
+  examples: |
+    - find foods for me
+    - food please
+    - please find foods
+    - foods please
+    - show me foods
+    - show me foods please
+    - show me restaurants to good
+    - show me [Japanese](food_category) food restaurants
+    - l'm looking for dinner
+    - I want to have something for my lunch
+    - food for lunch
+    - food for dinner
+    - where to eat
+    - what can I try for my lunch
+    - I want to try [Japanese](food_category) food today
+    - show me foods near [Clementi](place)
+    - I want to try [Western](food_category) food
+    - show me foods near [Fort Canning](place)
+    - show me foods at [Chinatown](place)
+    - I want to have [International](food_category) food for lunch
+    - show me foods at [Bugis](place)
+    - I want to have [International](food_category) food for lunch
+    - show me foods at [HarbourFront](place)
+    - I want to have [Indonesian](food_category) food for dinner
+    - show me foods at [City Hall](place)
+    - I want to have [Thai](food_category) food
+    - show me foods at [HarbourFront](place)
+    - I want to have [Taiwanese](food_category) food
+    - show me foods at [City Hall](place)
+    - I want to have [Japanese](food_category) food
+    - find me breakfast
+    - find me [Buffet](food_category)

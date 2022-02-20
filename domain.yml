@@ -1,4 +1,6 @@
 version: '2.0'
+config:
+  store_entities_as_slots: true
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
@@ -17,22 +19,29 @@ intents:
     use_entities: true
 - bot_challenge:
     use_entities: true
-- find_foods
-- inform_food_category
-- inform_place
+- find_foods:
+    use_entities: true
+- inform_food_category:
+    use_entities: true
+- inform_place:
+    use_entities: true
 entities:
-  - food_category
-  - place
+- food_category
+- place
 slots:
   place:
-    type: any
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
     influence_conversation: false
   food_category:
-    type: any
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
     influence_conversation: false
 responses:
   utter_greet:
-  - text: Hey! How are you?
+  - text: Hi, I'm helping to find foods for you!
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
     text: 'Here is something to cheer you up:'
@@ -49,24 +58,24 @@ responses:
   utter_ask_food_category:
   - text: Which type of food you would like to try?
 actions:
-  - action_show_foods
+- action_show_foods
 forms:
   food_finder_form:
     required_slots:
-      place:
-      - entity: place
-        type: from_entity
-      - intent:
-        - find_foods
-        - inform_place
-        - food_finder_form
-        type: from_text
       food_category:
       - entity: food_category
         type: from_entity
       - intent:
         - find_foods
         - inform_food_category
+        - food_finder_form
+        type: from_text
+      place:
+      - entity: place
+        type: from_entity
+      - intent:
+        - find_foods
+        - inform_place
         - food_finder_form
         type: from_text
 e2e_actions: []

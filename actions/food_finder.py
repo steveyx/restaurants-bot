@@ -16,8 +16,8 @@ class FoodFinder:
 
     @classmethod
     def find_restaurants(cls, place=None, food_category=None, max_results=10):
-        _rests = [r for r in cls.restaurants if " ".join(r["category"]).find(food_category) > -1]
-        _rests = [r for r in _rests if place in [p['name'] for p in r["places"]]]
+        _rests = [r for r in cls.restaurants if " ".join(r["category"]).find(food_category.title()) > -1]
+        _rests = [r for r in _rests if place in [p['name'].title() for p in r["places"]]]
         if len(_rests) > max_results:
             return _rests[:max_results]
         return _rests

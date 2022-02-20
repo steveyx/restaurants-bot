@@ -5,9 +5,9 @@ Commands:
    rasa train
 -  open a new terminal and run rasa server
    rasa run
--  open a new terminal and run action server
+-  open a new terminal and run action server (for debug mode -vv)
    rasa run actions
 -  run chatbot with rasa-x
-   rasa-x
--  to run chatbot in terminal
-   rasa shell
+   rasa x
+-  to run chatbot in terminal (debug mode)
+   rasa shell --debug

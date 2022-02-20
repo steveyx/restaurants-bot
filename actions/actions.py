@@ -29,19 +29,19 @@ class ActionShowFoods(Action):
             return [SlotSet("place", None)]
         _found_place = FoodFinder.find_place_in_db(str(_place))
         if not _found_place:
-            dispatcher.utter_message(text="Sorry, I have not idea about the place {}. You may try another place.")
+            dispatcher.utter_message(text="Sorry, I have not idea about the place {}. You may try other places.")
             return [SlotSet("place", None)]
         _category = tracker.get_slot("food_category")
         if not _category:
             dispatcher.utter_message(text="Sorry I didn't get your food_category")
             return [SlotSet("food_category", None)]
-        _found_category = FoodFinder.find_place_in_db(str(_place))
+        _found_category = FoodFinder.find_food_category_in_db(str(_category))
         if not _found_category:
-            dispatcher.utter_message(text="Sorry, I have not idea about the food {}. You may try another kind of food.")
+            dispatcher.utter_message(text="Sorry, I have not idea about the food {}. You may try other foods.")
             return [SlotSet("food_category", None)]
         _rests = FoodFinder.find_restaurants(place=_found_place, food_category=_found_category)
         if not _rests:
-            dispatcher.utter_message(text="Sorry, I have find {} food at {}".format(_category, _found_place))
+            dispatcher.utter_message(text="Sorry, there is no {} food at {}".format(_category, _found_place))
             dispatcher.utter_message(text="You can try other foods or at other places")
             return [SlotSet("food_category", None), SlotSet("place", None)]
         _attachments = {

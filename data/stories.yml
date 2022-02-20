@@ -28,3 +28,15 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: greet and food_finder_form
+  steps:
+  - intent: greet
+  - action: food_finder_form
+  - action: action_show_foods
+
+- story: ask and food_finder_form
+  steps:
+  - intent: find_foods
+  - action: food_finder_form
+  - action: action_show_foods
