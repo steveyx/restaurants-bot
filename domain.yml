@@ -3,13 +3,33 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- affirm
-- bot_challenge
-- deny
-- goodbye
-- greet
-- mood_great
-- mood_unhappy
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- find_foods
+- inform_food_category
+- inform_place
+entities:
+  - food_category
+  - place
+slots:
+  place:
+    type: any
+    influence_conversation: false
+  food_category:
+    type: any
+    influence_conversation: false
 responses:
   utter_greet:
   - text: Hey! How are you?
@@ -24,3 +44,29 @@ responses:
   - text: Bye
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
+  utter_ask_place:
+  - text: Where are you heading for food?
+  utter_ask_food_category:
+  - text: Which type of food you would like to try?
+actions:
+  - action_show_foods
+forms:
+  food_finder_form:
+    required_slots:
+      place:
+      - entity: place
+        type: from_entity
+      - intent:
+        - find_foods
+        - inform_place
+        - food_finder_form
+        type: from_text
+      food_category:
+      - entity: food_category
+        type: from_entity
+      - intent:
+        - find_foods
+        - inform_food_category
+        - food_finder_form
+        type: from_text
+e2e_actions: []

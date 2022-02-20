@@ -1,6 +1,6 @@
 pandas==1.3.5
 rasa==2.8.1
 rasa-sdk==2.8.1
-rasa-x==0.39.3
+rasa-x==0.39.3 --extra-index-url https://pypi.rasa.com/simple
 SQLAlchemy==1.3.22
 sanic-jwt==1.6.0
