@@ -37,8 +37,6 @@ Aljunied,1.316433,103.882906,Lorong 25 Geylang,388310
 Kallang,1.311489,103.871387,Sims Avenue,387405
 Lavender,1.307378,103.862768,Kallang Road,208699
 Bugis,1.300465,103.855706,Victoria Street,188022
-City Hall,1.292936,103.852586,North Bridge Road,179100
-Raffles Place,1.284126,103.851462,Raffles Place,048618
 Tanjong Pagar,1.276561,103.845725,Maxwell Road,069119
 Outram Park,1.27974,103.839514,Eu Tong Sen Street,059816
 Tiong Bahru,1.286103,103.827445,Tiong Bahru Road,168731
@@ -48,7 +46,6 @@ Commonwealth,1.302509,103.798226,Commonwealth Avenue,149735
 Buona Vista,1.307224,103.790254,North Buona Vista Road,139345
 Dover,1.311405,103.778638,Commonwealth Avenue West,138677
 Clementi,1.315201,103.765182,Commonwealth Avenue West,129580
-Jurong East,1.333153,103.742287,Jurong East Street 12,609690
 Chinese Garden,1.342353,103.732597,Boon Lay Way,609959
 Lakeside,1.344259,103.720949,Boon Lay Way,649845
 Boon Lay,1.338604,103.706065,Boon Lay Way,649846
@@ -61,10 +58,8 @@ Tuas Link,1.340882,103.636991,Tuas West Drive,638418
 Expo,1.335383,103.962375,Expo Drive,485985
 Changi Airport,1.357479,103.987884,Airport Boulevard,819661
 HarbourFront,1.265389,103.82153,Telok Blangah Road,098867
-Outram Park,1.27974,103.839514,Eu Tong Sen Street,059816
 Chinatown,1.284224,103.845144,Upper Cross Street,058362
 Clarke Quay,1.288386,103.846555,Eu Tong Sen Street,059815
-Dhoby Ghaut,1.298701,103.846115,Orchard Road,238826
 Little India,1.3068,103.849647,Bukit Timah Road,229900
 Farrer Park,1.311906,103.853478,Race Course Road,218703
 Boon Keng,1.319336,103.861569,Serangoon Road,328260
@@ -76,7 +71,6 @@ Hougang,1.371292,103.892381,Hougang Central,538758
 Buangkok,1.382878,103.893122,Sengkang Central,545061
 Sengkang,1.391695,103.895485,Sengkang Square,545062
 Punggol,1.404547,103.902073,Punggol Central,828868
-Dhoby Ghaut,1.298701,103.846115,Orchard Road,238826
 Bras Basah,1.296862,103.850667,Bras Basah Road,189561
 Esplanade,1.293658,103.855081,Bras Basah Road,189562
 Promenade,1.293999,103.86035,Temasek Avenue,039193
@@ -84,28 +78,22 @@ Nicoll Highway,1.299767,103.863637,Republic Avenue,038970
 Stadium,1.302812,103.875338,Stadium Walk,397692
 Mountbatten,1.306202,103.882528,Mountbatten Road,398006
 Dakota,1.308548,103.889065,Old Airport Road,397973
-Paya Lebar,1.318112,103.89306,Paya Lebar Road,409006
 MacPherson,1.32615,103.889299,Circuit Link,378956
 Tai Seng,1.335102,103.888433,Upper Paya Lebar Road,534803
 Bartley,1.342501,103.880178,Bartley Road,539788
-Serangoon,1.349708,103.873575,Upper Serangoon Road,534801
 Lorong Chuan,1.351612,103.864152,Serangoon Avenue 3,554533
-Bishan,1.350839,103.848144,Bishan Road,579827
 Marymount,1.348707,103.839423,Marymount Road,573993
 Caldecott,1.337675,103.83953,Toa Payoh Rise,298113
 Botanic Gardens,1.322114,103.814985,Cluny Park Road,257494
 Farrer Road,1.317439,103.807379,Farrer Road,268857
 Holland Village,1.31224,103.796399,Holland Avenue,278995
-Buona Vista,1.307224,103.790254,North Buona Vista Road,139345
 one-north,1.29976,103.787458,Ayer Rajah Avenue,138647
 Kent Ridge,1.293537,103.784572,South Buona Vista Road,118177
 Haw Par Villa,1.282571,103.781753,Pasir Panjang Road,117396
 Pasir Panjang,1.276214,103.79135,Pasir Panjang Road,117424
 Labrador Park,1.272254,103.802632,Telok Blangah Road,109029
 Telok Blangah,1.270706,103.809762,Telok Blangah Road,109028
-HarbourFront,1.265389,103.82153,Telok Blangah Road,098867
 Bayfront,1.281874,103.85908,Bayfront Avenue,018957
-Marina Bay,1.276427,103.854598,Park Street,018925
 Bukit Panjang,1.379002,103.761535,Upper Bukit Timah Road,678213
 Cashew,1.369815,103.764439,Cashew Road,679696
 Hillview,1.362345,103.767418,Upper Bukit Timah Road,678211
@@ -113,30 +101,20 @@ Beauty World,1.341223,103.775794,Upper Bukit Timah Road,588216
 King Albert Park,1.335663,103.783399,Blackmore Drive,599987
 Sixth Avenue,1.330858,103.796907,Bukit Timah Road,269784
 Tan Kah Kee,1.325556,103.80776,Bukit Timah Road,266268
-Botanic Gardens,1.322114,103.814985,Cluny Park Road,257494
 Stevens,1.320066,103.826024,Stevens Road,257877
-Newton,1.31232,103.837985,Scotts Road,228234
-Little India,1.3068,103.849647,Bukit Timah Road,229900
 Rochor,1.303852,103.852769,Rochor Canal Road,188505
-Bugis,1.300465,103.855706,Victoria Street,188022
-Promenade,1.293999,103.86035,Temasek Avenue,039193
-Bayfront,1.281874,103.85908,Bayfront Avenue,018957
 Downtown,1.279446,103.85284,Central Boulevard,018969
 Telok Ayer,1.282069,103.848649,Cross Street,048416
-Chinatown,1.284224,103.845144,Upper Cross Street,058362
 Fort Canning,1.292481,103.844331,River Valley Road,179038
 Bencoolen,1.298918,103.850354,Bencoolen Street,189658
 Jalan Besar,1.305171,103.855296,Jalan Besar,208826
 Bendemeer,1.313673,103.862978,Kallang Bahru,339356
 Geylang Bahru,1.321301,103.871623,Kallang Bahru,339355
 Mattar,1.326877,103.883248,Merpati Road,379314
-MacPherson,1.32615,103.889299,Circuit Link,378956
 Ubi,1.329975,103.899227,Ubi Avenue 2,408899
 Kaki Bukit,1.334967,103.90846,Kaki Bukit Avenue 1,415804
 Bedok North,1.334742,103.917978,Bedok North Road,479481
 Bedok Reservoir,1.336608,103.932235,Bedok North Avenue 3,469724
 Tampines West,1.345515,103.938437,Tampines Avenue 4,529683
-Tampines,1.353302,103.945145,Tampines Central 1,529538
 Tampines East,1.356191,103.954634,Tampines Avenue 7,529623
 Upper Changi,1.34174,103.961473,Upper Changi Road East,485990
-Expo,1.335383,103.962375,Expo Drive,485985
