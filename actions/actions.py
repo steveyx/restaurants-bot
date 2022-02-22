@@ -52,7 +52,7 @@ class ActionShowFoods(Action):
         }
         _elements = [{"title": r["title"], "image_url": r["imageUrl"], "buttons":[]} for r in _rests]
         _attachments["payload"]["elements"] = _elements
-        dispatcher.utter_message(text="Here are the foods found for you:")
-        for _r in _rests:
+        # dispatcher.utter_message(text="Here are the foods found for you:")
+        for _r in _rests[:1]:
             dispatcher.utter_message(text=_r["title"], image=_r["imageUrl"])
         return [SlotSet("food_category", None), SlotSet("place", None)]

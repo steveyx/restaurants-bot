@@ -36,7 +36,7 @@ stories:
   - action: food_finder_form
   - action: action_show_foods
 
-- story: ask and food_finder_form
+- story: ask_for_food and food_finder_form
   steps:
   - intent: find_foods
   - action: food_finder_form
