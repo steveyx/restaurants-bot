@@ -41,8 +41,9 @@ class ActionShowFoods(Action):
             return [SlotSet("food_category", None)]
         _rests = FoodFinder.find_restaurants(place=_found_place, food_category=_found_category)
         if not _rests:
-            dispatcher.utter_message(text="Sorry, there is no {} food at {}".format(_category, _found_place))
-            dispatcher.utter_message(text="You can try other foods or at other places")
+            _text = "Sorry, there is no {} food at {}.  " \
+                    "You can try other foods or at other places.".format(_category, _found_place)
+            dispatcher.utter_message(text=_text)
             return [SlotSet("food_category", None), SlotSet("place", None)]
         _attachments = {
             "type": "template",
@@ -52,7 +53,9 @@ class ActionShowFoods(Action):
         }
         _elements = [{"title": r["title"], "image_url": r["imageUrl"], "buttons":[]} for r in _rests]
         _attachments["payload"]["elements"] = _elements
-        # dispatcher.utter_message(text="Here are the foods found for you:")
+        _text = "Here are the foods found for you:    "
+        # dispatcher.utter_message(text=_text)
         for _r in _rests[:1]:
-            dispatcher.utter_message(text=_r["title"], image=_r["imageUrl"])
+            _text = _text + _r["title"]
+            dispatcher.utter_message(text=_text, image=_r["imageUrl"])
         return [SlotSet("food_category", None), SlotSet("place", None)]
