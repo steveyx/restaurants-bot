@@ -202,12 +202,14 @@ nlu:
     - food for lunch
     - food for dinner
     - where to eat
+    - show me food near [Orchard](place)
+    - food near [Orchard](place)
     - what can I try for my lunch
     - I want to try [Japanese](food_category) food today
     - show me foods near [Clementi](place)
     - I want to try [Western](food_category) food
-    - show me foods near [Fort Canning](place)
-    - show me foods at [Chinatown](place)
+    - show me foods near [Raffles Place](place)
+    - show me foods at [Raffles Place](place)
     - I want to have [International](food_category) food for lunch
     - show me foods at [Bugis](place)
     - I want to have [International](food_category) food for lunch

@@ -2,7 +2,7 @@ import pandas as pd
 import json
 
 
-def load_json(filename="restaurant_data/restaurants.json"):
+def load_json(filename="restaurant_data/unreal_restaurants.json"):
     with open(filename) as data_file:
         data = json.load(data_file)
     return data

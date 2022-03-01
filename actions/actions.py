@@ -53,7 +53,7 @@ class ActionShowFoods(Action):
         }
         _elements = [{"title": r["title"], "image_url": r["imageUrl"], "buttons":[]} for r in _rests]
         _attachments["payload"]["elements"] = _elements
-        _text = "Here are the foods found for you:    "
+        _text = "Here are for you:        "
         # dispatcher.utter_message(text=_text)
         for _r in _rests[:1]:
             _text = _text + _r["title"]
